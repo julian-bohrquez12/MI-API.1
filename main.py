@@ -12,3 +12,15 @@ def hello_world():
 @app.get("/info")
 def info():
     return {"api": "FastAPI", "week": 1, "status": "running"}
+
+# Agregar al final de tu main.py existente
+
+@app.get("/my-profile")
+def my_profile():
+    return {
+        "name": "julian bohorquez",           # Cambiar por tu nombre
+        "bootcamp": "FastAPI",
+        "week": 1,
+        "date": "2025",
+        "likes_fastapi": True              # ¿Te gustó FastAPI?
+    }
